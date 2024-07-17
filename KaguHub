@@ -1,27 +1,68 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local HttpService = game:GetService("HttpService")
+local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
 
+-- Function to get the current launch count from GitHub
+local function getLaunchCount()
+    local url = "https://api.github.com/repos/Kaguya11/KaguHubRework/contents/countlunch.txt"
+    local response = game:HttpGet(url)
+    local data = HttpService:JSONDecode(response)
+    local content = data.content
+    local decoded_content = game:HttpGet("https://api.github.com/repos/Kaguya11/KaguHubRework/contents/countlunch.txt")
+    local encoded_content = HttpService:JSONDecode(decoded_content).content
+    local launch_count = tonumber(HttpService:Base64Decode(encoded_content))
+    return launch_count
+end
+
+-- Function to update the launch count on GitHub
+local function updateLaunchCount(count)
+    local url = "https://api.github.com/repos/Kaguya11/KaguHubRework/contents/countlunch.txt"
+    local headers = {
+        ["Authorization"] = "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",
+        ["Content-Type"] = "application/json"
+    }
+    local content = HttpService:Base64Encode(tostring(count))
+    local sha = HttpService:JSONDecode(game:HttpGet(url)).sha
+    local data = {
+        message = "Update launch count",
+        content = content,
+        sha = sha
+    }
+    local encoded_data = HttpService:JSONEncode(data)
+    local response = HttpService:PostAsync(url, encoded_data, Enum.HttpContentType.ApplicationJson, false, headers)
+    return HttpService:JSONDecode(response)
+end
+
+-- Main script
 local win = DiscordLib:Window("Kagu Hub")
-
 local main = win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
-
 local mainchannel = main:Channel("Info")
 
 mainchannel:Label("Creator: mrkaguya")
 mainchannel:Button("Discord Server", function()
-setclipboard("https://discord.gg/AkWWsyw2eG")
-DiscordLib:Notification("Notification", "Copied to the clipboard", "Okay!")
+    setclipboard("https://discord.gg/AkWWsyw2eG")
+    DiscordLib:Notification("Notification", "Copied to the clipboard", "Okay!")
 end)
 
-local serv = win:Server("Blox Fruits", "")
+-- Get the current number of launches
+local current_launch_count = getLaunchCount()
+-- Update the launch count
+if current_launch_count then
+    current_launch_count = current_launch_count + 1
+    updateLaunchCount(current_launch_count)
+end
 
+-- Display the number of launches in the UI
+mainchannel:Label("Launch Count: " .. (current_launch_count or "Error"))
+
+local serv = win:Server("Blox Fruits", "")
 local btns = serv:Channel("W-azure")
 
 btns:Button("W-azure", function()
     getgenv().Team = "Pirates"
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-DiscordLib:Notification("Notification", "Success", "Okay!")
+    getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+    getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+    DiscordLib:Notification("Notification", "Success", "Okay!")
 end)
 
 btns:Seperator()
@@ -30,8 +71,5 @@ local tgls = serv:Channel("Redz Hub")
 
 tgls:Button("Redz", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-DiscordLib:Notification("Notification", "Success", "Okay!")
-end)
-
-
-
+    DiscordLib:Notification("Notification", "Success", "Okay!")
+end) 
