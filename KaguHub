@@ -1,0 +1,37 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Kagu Hub")
+
+local main = win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+
+local mainchannel = main:Channel("Info")
+
+mainchannel:Label("Creator: mrkaguya")
+mainchannel:Button("Discord Server", function()
+setclipboard("https://discord.gg/AkWWsyw2eG")
+DiscordLib:Notification("Notification", "Copied to the clipboard", "Okay!")
+end)
+
+local serv = win:Server("Blox Fruits", "")
+
+local btns = serv:Channel("W-azure")
+
+btns:Button("W-azure", function()
+    getgenv().Team = "Pirates"
+getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+DiscordLib:Notification("Notification", "Success", "Okay!")
+end)
+
+btns:Seperator()
+
+local tgls = serv:Channel("Redz Hub")
+
+tgls:Button("Redz", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+DiscordLib:Notification("Notification", "Success", "Okay!")
+end)
+
+
+
