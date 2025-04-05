@@ -11,6 +11,7 @@ local info = market:GetProductInfo(PlaceId)
 local games = {
     [70876832253163] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/DeadRails.lua', -- dead rails
     [116495829188952] = 'https://pastebin.com/raw/1bxevcFK'
+    [4639625707] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/WarTycoon.lua'
 }
 
 if identifyexecutor() then
