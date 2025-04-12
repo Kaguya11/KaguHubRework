@@ -13,6 +13,7 @@ local games = {
     [116495829188952] = 'https://pastebin.com/raw/1bxevcFK', -- Lobby Dead Rails
     [4639625707] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/WarTycoon.lua', -- War Tycoon
     [17625359962] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/Rivals.lua' -- Rivals
+    [4543144283] = '' -- Mega Noob Simulator
 }
 
 if identifyexecutor() then
