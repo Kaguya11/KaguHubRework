@@ -47,7 +47,7 @@ This project has been written and tested with Wave, AwpGG, Swift, Velocity, Delt
     - [List of games](https://pastebin.com/HLSCgbcf)
 </details>
 
-## 🧑‍💻❗Supported executors
+##❗Supported executors
 
 - PC:
     - AwpGG[100%]
