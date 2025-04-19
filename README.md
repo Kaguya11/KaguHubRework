@@ -28,7 +28,7 @@ This project has been written and tested with Wave, AwpGG, Swift, Velocity, Delt
 - Created by me:
     - **Rivals**
         - Silent Aim
-        - Esp
+        - **Esp**
     - **War Tycoon**
         - Silent Aim
         - Esp
@@ -49,18 +49,18 @@ This project has been written and tested with Wave, AwpGG, Swift, Velocity, Delt
 
 ## ❗Supported executors
 
-- PC:
-    - AwpGG[100%]
-    - Wave[100%]
-    - Swift[100%]
-    - Velocity[70%]
+- **PC**:
+    - **AwpGG[100%]**
+    - **Wave[100%]**
+    - **Swift[100%]**
+    - **Velocity[70%]**
 
-- Mobile:
-    - Delta[100%]
-    - Cryptic[100%]
-    - KRNL[100%]
-    - Trigon[100% but with lag]
-    - Soon Other[Testing on other exec]
+- **Mobile**:
+    - **Delta[100%]**
+    - **Cryptic[100%]**
+    - **KRNL[100%]**
+    - **Trigon[100% but with lag]**
+    - **Soon Other[Testing on other exec]**
 </details>
 
 ### ❤️ Enjoy using it
