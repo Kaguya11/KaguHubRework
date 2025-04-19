@@ -1,4 +1,4 @@
-# ✨ Kagu Hub [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Kaguya11.KaguHubRework)]
+# ✨ Kagu Hub ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Kaguya11.KaguHubRework)
 
 This project is a universal hub that works with many games.
 
