@@ -37,7 +37,13 @@ A highly optimized script hub compatible with **100+ Roblox games**. Built for e
 | Arceus X(Mobile) | ✅ Stable       | AWP.GG(PC)       | ✅ Stable        |
 | Codex(Mobile)   |  ✅ Stable       | Zenith(PC)       | ✅ Stable        |
 > These are the executors on which we tested our script, if the script works on others, then let us know.
-## 📥 Installation  
+## 📥 Installation
+**Main Script**  
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHubRework/main/Scripts/Loader.lua"))()
 ```
+**Hub 100+ Games(soon rework)**
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHubRework/main/KaguHub"))()
+```
+
