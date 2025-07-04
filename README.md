@@ -1,69 +1,43 @@
-# ✨ Kagu Hub ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Kaguya11.KaguHubRework)
+# 🚀 Kagu Hub | Universal Roblox Script Hub ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Kaguya11.KaguHubRework)  
 
-This project is a universal hub that works with many games.
+A highly optimized script hub compatible with **100+ Roblox games**. Built for emotions, ease of use, and broad exploit support.  
 
-The hub is optimized, organized and simplified to the highest level to ensure its efficiency, optimization and speed.
+> ⚠️ **Note:** This project is stable but may have minor bugs. Report issues => [**Discord**](https://discord.gg/AkWWsyw2eG), [**Telegram**](https://t.me/Kaguyaa1).  
 
-The project is out of beta, but there may still be some bugs. Feel free to create pull requests, report issues, or contact me through any of my related platforms.
+## 🎮 Supported Games  
+### 🛠️ Custom Scripts  
+| Game | Features |
+|------|----------|
+| [**Rivals**](https://www.roblox.com/games/17625359962/RIVALS) | Silent Aim, ESP, Speedhack |
+| [**War Tycoon**](https://www.roblox.com/games/4639625707/Hovercrafts-War-Tycoon) | Rage Mode, ESP, Silent Aim |
+| [**Mega Noob Simulator**](https://www.roblox.com/games/4543144283/THE-HATCH-Mega-Noob-Simulator) | Auto-Farm, Auto-Rebirth |
+| [**MM2**](https://www.roblox.com/games/142823291/Murder-Mystery-2) | Multi Farm, Silent Aim, Kill All, ESP |
+| [**Bike Of Hell**](https://www.roblox.com/games/14943334555/UPD-Bike-of-Hell) | Auto End, Auto Wheel, Auto Daily |
+| [**Dead Rails**](https://www.roblox.com/games/116495829188952/Dead-Rails-Alpha) | Auto Collect, Auto Use, ESP |
+| [**Be NPC or Die**](https://www.roblox.com/games/11276071411/Be-NPC-or-DIE) | Aut Farm, Auto Task, ESP |
 
-### ❗ Notice
-This project has been written and tested with Wave, AwpGG, Swift, Velocity, Delta, Trigon, Cryptic, KRNL. However, I will do my best to modularize support for every exploit. So far, the required functions for this module to run are listed below:
+### 📦 Community Scripts  
+- 100+ pre-loaded game scripts  
+- *More added regularly!*  
 
-<details> <summary> Dependencies (required functions & libraries): </summary>
+## ⚙️ Dependencies  
+| Library/Function | Required? | Notes |
+|-----------------|-----------|-------|
+| **Drawing Library** | ✅ | For ESP/UI |
+| **getgenv()** | ✅ | Global variables |
+| **hookfunction** | ✅ | Function hooking |
 
-- Libraries:
-    - **Drawing**
-        - Drawing.new *(function)*
-        - Drawing.Fonts *(table)*
-    - **Input**
-        - Input.MouseMove *(function)* - Alternative to **mousemoverel**
-- Functions:
-    - **getgenv**
-    - **getrawmetatable**
-    - **mousemoverel** / **Input.MouseMove**
-</details>
-
-<details> <summary> Support Games: </summary>
-
-- Created by me:
-    - **Rivals**
-        - Silent Aim
-        - **Esp**
-    - **War Tycoon**
-        - Silent Aim
-        - Esp
-        - Rage Mode and etc
-    - **Dead Rails**
-        - AimBot
-        - Esp
-        - Steal Cash
-        - Auto Collect Bond
-    - **Mega Noob Simulator**
-        - Auto Farm NPC
-        - Auto Upgrade
-        - Auto Rebirth
-- Kagu Hub[Not My Scripts]:
-    - I can't list all the games that are in the hub, but there are more than 100 games there and you can find a script for each one!
-    - [List of games](https://pastebin.com/HLSCgbcf)
-</details>
-
-## ❗Supported executors
-
-- **PC**:
-    - **AwpGG[100%]**
-    - **Wave[100%]**
-    - **Swift[100%]**
-    - **Velocity[70%]**
-
-- **Mobile**:
-    - **Delta[100%]**
-    - **Cryptic[100%]**
-    - **KRNL[100%]**
-    - **Trigon[100% but with lag]**
-    - **Soon Other[Testing on other exec]**
-</details>
-
-### ❤️ Enjoy using it
+### Supported Executors
+| **Free**       | **Compatibility** | **Paid**         | **Compatibility** |
+|----------------|-------------------|------------------|-------------------|
+| Krnl(Mobile)   | ✅ Stable         | Synapse X(PC)    | ✅ Stable        |
+| Fluxus(Mobile) | ⚠️ Laggy          | Potassium(PC)    | ✅ Stable        |
+| Delta(Mobile)  | ✅ Stable         | Seliware(PC)     | ✅ Stable        |
+| Trigon(Mobile/PC)| ⚠️ Laggy        | Wave(PC)         | ✅ Stable        |  
+| Arceus X(Mobile) | ✅ Stable       | AWP.GG(PC)       | ✅ Stable        |
+| Codex(Mobile)   |  ✅ Stable       | Zenith(PC)       | ✅ Stable        |
+> These are the executors on which we tested our script, if the script works on others, then let us know.
+## 📥 Installation  
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/Loader.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHubRework/main/Scripts/Loader.lua"))()
 ```
