@@ -16,7 +16,7 @@ local games = {
     [11276071411] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/BeNPCorDie.lua', -- Be NPC or Die
     [14943334555] = 'https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/BikeOfHell.lua' -- Bike of Hell
 }
-setclipboard(PlaceId) 
+
 if games[PlaceId] then 
     lib:Notify('Supported game loading: ' .. info.Name)
     loadstring(game:HttpGet(games[PlaceId]))()
